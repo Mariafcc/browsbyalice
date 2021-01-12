@@ -13,20 +13,20 @@ class App extends Component {
     }
 }
 
-  loadServices(){
-    $.ajax({
-      url: `services.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ servicesData: data });
-        document.title = `${this.state.servicesData.services.name} | ${this.state.servicesData.services.title}`;
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.log(err);
-      },
-    })
-  }
+  // loadServices(){
+  //   $.ajax({
+  //     url: `services.json`,
+  //     dataType: "json",
+  //     cache: false,
+  //     success: function (data) {
+  //       this.setState({ servicesData: data });
+  //       document.title = `${this.state.servicesData.services.name} | ${this.state.servicesData.services.title}`;
+  //     }.bind(this),
+  //     error: function (xhr, status, err) {
+  //       console.log(err);
+  //     },
+  //   })
+  // }
   render() {
   return (
     <Router>
