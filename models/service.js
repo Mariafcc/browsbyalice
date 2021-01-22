@@ -1,14 +1,26 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+module.exports = (sequelize, Sequelize) => {
+  const Service = sequelize.define("services", {
+      id: {
+          type: Sequelize.INTEGER,
+          primaryKey: true
+      },
+      name: {
+          type: Sequelize.STRING
+      },
+      price: {
+          type: Sequelize.INTEGER
+      },
+      description: {
+          type: Sequelize.STRING
 
-const serviceSchema = new Schema({
-  name: { type: String, required: true },
-  description: { type: String, required: true },
-  time: { type: Integer, required: true },
-  price: { type: Integer, required: true }
-  
-});
+      },
+      time: {
+          type: Sequelize.INTEGER
 
-const Service = mongoose.model("Service", serviceSchema);
+      }
 
-module.exports = Service;
+  });
+
+  return Service;
+};
+

@@ -1,24 +1,29 @@
-const express = require("express");
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path')
+const fs = require('fs');
 
-const mongoose = require("mongoose");
-const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT || 3001;
 
-// Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-// Add routes, both API and view
-app.use(routes);
+app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
 
-// Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/browservices");
+const db = require("./models");
 
-// Start the API server
-app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+//run initially
+const seeds = require("./seeds");
+db.sequelize.sync({ force: true }).then(() => {
+    console.log('Drop and Resync Db');
+    seeds.serviceSeed();
+});
+
+//comment out initially
+// db.sequelize.sync();
+
+require('./routes/services')(app);
+
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}.`);
 });
