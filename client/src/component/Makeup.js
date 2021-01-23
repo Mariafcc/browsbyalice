@@ -5,7 +5,7 @@ const Makeup = () => {
         <div id="makeup">
             <div className="container-fluid">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
                                 <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
@@ -42,7 +42,7 @@ const Makeup = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
                                 <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
@@ -80,7 +80,7 @@ const Makeup = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
                                 <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
