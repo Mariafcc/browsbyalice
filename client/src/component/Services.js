@@ -1,28 +1,26 @@
-import React, { Component } from "react";
-import  ServiceDisplay from "../services/service.services"
-import Header from "./Header"
-
-const ServiceSelector = () => {
-    const [services, setServies] = useState([]);
-
-
-    useEffect(() => {
-        getServices();
-    }, [])
+import React, { useEffect, useState } from "react";
+import Header from "./Header";
+import Brows from "./Brows";
+import Lashes from "./Lashes";
+import Makeup from "./Makeup";
 
 
-    const getServices = () => {
-        ServiceDisplay.serviceDisplay().then((res) => {
-            const reccs = Object.values(res.data.services)
-            reccs.sort((a, b) => { return a.order - b.order })
-            setProducts([...reccs]);
-        
-        })
-            .catch((error) => {
-                console.log(error);
-            });
-    };
+
+const ServiceList = () => {
+
+    return (
+        <div>
+            <Header />
+            <div className="container-fluid">
+                <div className="container" style={{border:"solid"}}>
+                   <Brows/>
+                   <Lashes id="lashes"/>
+                    <Makeup id="makeup"/>
+                </div>
+            </div>
+        </div>
+    )
 
 }
 
-export default ServiceSelector;
+export default ServiceList;

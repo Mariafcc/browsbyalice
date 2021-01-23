@@ -11,7 +11,7 @@ exports.getServices = (req, res) => {
                 services
             });
         })
-        // .catch(err => {
-        //     res.status(500).send({ message: err.message });
-        // });
+        .catch(err => {
+            res.status(500).send({ message: err.message });
+        });
 };
