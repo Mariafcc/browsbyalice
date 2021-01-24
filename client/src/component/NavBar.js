@@ -11,9 +11,9 @@ class NavBar extends Component{
                 </button>
                 <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
                     <div className='navbar-nav ml-auto'>
-                        <a style={{color:"black"}} className='nav-item nav-link' href='/'>Home <span className='sr-only'>(current)</span></a>
-                        <a style={{color:"black"}} className='nav-item nav-link' href='/services'>Services</a>
-                        <a style={{color:"black"}} className='nav-item nav-link' href='after-care'>After Care</a>
+                        <a style={{color:"black", fontSize: "25px", fontFamily: 'Cedarville Cursive'}} className='nav-item nav-link' href='/'>Home <span className='sr-only'>(current)</span></a>
+                        <a style={{color:"black", fontSize: "25px", fontFamily: 'Cedarville Cursive'}} className='nav-item nav-link' href='/services'>Services</a>
+                        <a style={{color:"black", fontSize: "25px",fontFamily: 'Cedarville Cursive'}} className='nav-item nav-link' href='after-care'>After Care</a>
                     </div>
                 </div>
             </div>
