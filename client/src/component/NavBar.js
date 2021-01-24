@@ -5,7 +5,7 @@ class NavBar extends Component{
     return (
         <nav className='navbar navbar-dark navbar-expand-lg'>
             <div className='container'>
-                <a style={{color:"black"}}className='navbar-brand' href='/'>Brows By Alice</a>
+                <a style={{ color: "#fbaed2", textShadow: "3px 3px black" , fontSize: "75px", fontFamily: 'Cedarville Cursive'}} className='navbar-brand' href='/'>Brows By Alice</a>
                 <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
                     <span className='navbar-toggler-icon'></span>
                 </button>
