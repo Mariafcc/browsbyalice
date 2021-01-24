@@ -1,13 +1,14 @@
+
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Brows from "./Brows";
 import Lashes from "./Lashes";
 import Makeup from "./Makeup";
-import "../styles/services.css"
-
+import "../styles/services.css";
 
 
 const ServiceList = () => {
+
 
     return (
         <div>

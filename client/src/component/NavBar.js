@@ -6,7 +6,6 @@ import NavDropdown  from 'react-bootstrap/NavDropdown';
 
 
 
-
 class NavBar extends Component {
     render() {
         return (
@@ -29,6 +28,7 @@ class NavBar extends Component {
 
 
         )
+
     }
 
 }
