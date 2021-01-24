@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import  ServiceDisplay from "../services/service.services"
 import Header from "./Header"
 
 const ServiceSelector = () => {
-    const [services, setServies] = useState([]);
+    const [services, setServices] = useState([]);
 
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const ServiceSelector = () => {
         ServiceDisplay.serviceDisplay().then((res) => {
             const reccs = Object.values(res.data.services)
             reccs.sort((a, b) => { return a.order - b.order })
-            setProducts([...reccs]);
+            setServices([...reccs]);
         
         })
             .catch((error) => {

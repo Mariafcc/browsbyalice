@@ -11,18 +11,17 @@ class Home extends Component {
         }
     }
 
-    render () {
-        return(
-            <div>
-                <img src="../img/openeyes.jpg" style={{width:"100%", height:"400px"}}/>
-                <div className="top">
-                <Header/>
+    render() {
+        return (
+            <React.Fragment>
+                <div className="top" style={{ width: "100%", height: "100%", backgroundImage: `url("https://media.istockphoto.com/photos/white-marble-texture-with-natural-pattern-for-background-picture-id1070353396?k=6&m=1070353396&s=612x612&w=0&h=TV4_31vkY6VXzkhcO1CQipzN2eOUzeTSkMMifU4wQbY=")` }}>
+                    <Header />
                 </div>
-                <About/>
-            </div>
+                <About />
+            </React.Fragment>
         )
     }
-   
+
 }
 
 export default Home;
