@@ -1,16 +1,17 @@
 import React from "react";
+import Button from "react-bootstrap/Button"
 
 const Brows = () => {
     return (
         <div>
-            <div className="container-fluid">
+            <div className="container-fluid" >
                 <div>
                     <img src="./img/preview-2.jpeg" style={{width:"100%", height:"400px", opacity:".5"}}></img>
                 </div>
                 <div className="container">
                     <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col" style={{padding:"20px"}}>
-                            <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
+                            <div className="container" style={{ fontFamily: 'Montserrat' }}>
                                 <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Microblading
                                 </p>
@@ -30,17 +31,18 @@ const Brows = () => {
                                 <p>
                                     $600
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                         <div class="col">
-                            <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
+                            <div className="container" style={{ fontFamily: 'Montserrat' }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline", paddingTop:"20px" }}>
                                     Ombré Powder
-                            </p>
+                                </p>
 
                                 <p>
                                     The ombré brow is a form of PMU that consists of different needle configurations to achieve a powdered brow look. The brow is fully shaded with a natural gradient effect towards the front. Ombré powder is a great option for people with oily skin or people who don’t retain pigment well.
-                            </p>
+                                </p>
                                 <b>
                                     Time:
                                 </b>
@@ -53,6 +55,7 @@ const Brows = () => {
                                 <p>
                                     $600
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                     </div>
@@ -79,6 +82,7 @@ const Brows = () => {
                                 <p>
                                     $800
                             </p>
+                            <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                         <div class="col">
@@ -102,6 +106,7 @@ const Brows = () => {
                                 <p>
                                     $30
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                     </div>
@@ -127,6 +132,7 @@ const Brows = () => {
                                 <p>
                                     $20
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                         <div class="col">
@@ -151,6 +157,7 @@ const Brows = () => {
                                 <p>
                                     $70
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                     </div>

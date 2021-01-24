@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button"
 
 const Makeup = () => {
     return (
@@ -8,7 +9,7 @@ const Makeup = () => {
                     <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Consultation
 
                                 </p>
@@ -16,53 +17,74 @@ const Makeup = () => {
                                 <p>
                                     Fill out
                                 </p>
+                                <b>
+                                    Time:
+                                </b>
                                 <p>
-                                    time: x hour
+                                    x Hour
                                 </p>
+                                <b>
+                                    Price:
+                                </b>
                                 <p>
-                                    price: $50
+                                    $50
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                         <div class="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Makeup Application
                                 </p>
 
                                 <p>
                                     Fill out
                                 </p>
+                                <b>
+                                    Time:
+                                </b>
                                 <p>
-                                    time: x hours
-                            </p>
+                                    x Hours
+                                </p>
+                                <b>
+                                    Price:
+                                </b>
                                 <p>
-                                    price: $100
-                            </p>
+                                    $100
+                                </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                     </div>
                     <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Makeup Trial
                                 </p>
 
                                 <p>
                                     Fill out
                                 </p>
+                                <b>
+                                    Time:
+                                </b>
                                 <p>
-                                    time: x hours
+                                    x Hours
                                 </p>
+                                <b>
+                                    Price:
+                                </b>
                                 <p>
-                                    price: $70
+                                    $70
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                         <div class="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Bridal Makeup
                                 </p>
 
@@ -71,34 +93,48 @@ const Makeup = () => {
                                     Bride only, includes body glow and faux mink lash application
 
                                 </p>
+                                <b>
+                                    Time:
+                                </b>
                                 <p>
-                                    time: x minutes
+                                    x Minutes
                                 </p>
+                                <b>
+                                    Price:
+                                </b>
                                 <p>
-                                    price: $300
+                                    $300
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
                     </div>
                     <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">
                             <div className="container" style={{ padding: "10px", fontFamily: 'Montserrat' }}>
-                                <p style={{ fontSize: "20px", textDecoration:"underline"  }}>
+                                <p style={{ fontSize: "20px", textDecoration: "underline" }}>
                                     Children Makeup(Under 13)
                                 </p>
 
                                 <p>
                                     Fill out
                                 </p>
+                                <b>
+                                    Time:
+                                </b>
                                 <p>
-                                    time: x hours
+                                    x Hours
                                 </p>
+                                <b>
+                                    Price:
+                                </b>
                                 <p>
-                                    price: $50
+                                    $50
                                 </p>
+                                <Button variant="outline-dark">Book</Button>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
