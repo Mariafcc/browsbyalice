@@ -13,8 +13,8 @@ const contactEmail = nodemailer.createTransport({
     host: "smtp.sendgrid.net",
     port: 465,
     auth: {
-        user: "brwsbyal",
-        pass: "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",
+        user: "",
+        pass: "",
     },
 });
 
