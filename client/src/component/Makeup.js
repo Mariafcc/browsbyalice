@@ -5,6 +5,9 @@ const Makeup = () => {
     return (
         <div id="makeup">
             <div className="container-fluid">
+                <div>
+                    <img src="./img/makeuplip.jpeg" style={{ width: "100%", height: "450px", opacity: ".5" }}></img>
+                </div>
                 <div className="container">
                     <div className="row" style={{ paddingBottom: "10px" }}>
                         <div className="col">

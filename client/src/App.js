@@ -4,6 +4,8 @@ import { Component } from 'react';
 import $ from "jquery";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Services from "./component/Services"
+import AfterCare from './component/AfterCare';
+import FormLayout from './component/FormLayout';
 
 class App extends Component {
   constructor() {
@@ -35,6 +37,8 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Home} />
             <Route exact path="/services" component={Services} />
+            <Route exact path="/aftercare" component={AfterCare} />
+            <Route exact path="/forms" component={FormLayout} />
           </div>
         </header>
       </div>
