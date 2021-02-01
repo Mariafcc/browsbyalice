@@ -18,7 +18,9 @@ class NavBar extends Component {
                             <NavDropdown.Item href="/services#makeup">Makeup</NavDropdown.Item>
                             <NavDropdown.Divider />
                         </NavDropdown>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="/forms">Forms</Nav.Link>
+                        {/* <Nav.Link href="#link">Policy and FAQ</Nav.Link> */}
+                        <Nav.Link href="/aftercare">After Care</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

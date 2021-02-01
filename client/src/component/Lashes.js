@@ -6,7 +6,7 @@ const Lashes = () => {
         <div id="lashes">
             <div className="container-fluid">
                 <div>
-                    <img src="../img/openeyes.jpg" style={{ width: "100%", height: "400px", opacity: ".5" }}></img>
+                    <img src="../img/openeyes.jpg" style={{ width: "100%", height: "450px", opacity: ".5" }}></img>
                 </div>
                 <div className="container">
                     <div className="row" style={{ paddingBottom: "10px" }}>
