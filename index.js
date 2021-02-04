@@ -9,30 +9,35 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
+const googlePass = process.env.REACT_APP_GOOGLE_PASS
+
 const contactEmail = nodemailer.createTransport({
-    host: "smtp.sendgrid.net",
+    host: "smtp.gmail.com",
     port: 465,
+    secure: true,
     auth: {
-        user: "",
-        pass: "",
+        user: "mariafcc01@gmail.com",
+        pass: googlePass,
     },
 });
 
-contactEmail.verify((error) => {
+contactEmail.verify(function(error, success) {
     if (error) {
-        console.log(error);
+      console.log(error);
     } else {
-        console.log("Ready to Send");
+      console.log("Server is ready to take our messages");
     }
 });
+
+
 
 router.post("/contact", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
     const mail = {
-        from: name,
-        to: "mariafcc01@gmail.com",
+        from: "mariafcc01@gmail.com",
+        to: "mariafcc01@icloud.com",
         subject: "Contact Form Message",
         html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
     };

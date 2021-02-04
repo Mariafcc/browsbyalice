@@ -7,7 +7,7 @@ class About extends Component {
         return (
             <div>
                 <AboutHeader />
-                <Container style={{fontFamily: "Dosis"}}>
+                <Container style={{fontFamily: "Dosis", fontWeight:"bolder",border:"solid"}}>
                     <br></br>
                     <p>Welcome to Brows by Alice! I’m Alice, and this website is your source for all information about permanent makeup (PMU) and the various services that I provide to my fabulous clientele, which I hope will include you as well!</p>
                     <br></br>
