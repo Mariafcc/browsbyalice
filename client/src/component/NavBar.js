@@ -20,8 +20,13 @@ class NavBar extends Component {
                             <NavDropdown.Item href="/services#makeup">Makeup</NavDropdown.Item>
                             <NavDropdown.Divider />
                         </NavDropdown>
-                        <Nav.Link href="/forms">Forms</Nav.Link>
-                        {/* <Nav.Link href="#link">Policy and FAQ</Nav.Link> */}
+                        <NavDropdown title="Forms" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/forms">Contact me</NavDropdown.Item>
+                            <NavDropdown.Item href="/forms.waiver">Microblanding Waver</NavDropdown.Item>
+                            <NavDropdown.Item href="/forms.After">Microblading After Care</NavDropdown.Item>
+                            <NavDropdown.Item href="/forms.covid">Covid</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                        </NavDropdown>
                         <Nav.Link href="/aftercare">After Care</Nav.Link>
                     </Nav>
                         <a href="https://www.instagram.com/brows.by.alice/?igshid=gz8d6g70lsza" target="_blank"><FaInstagram style={{ height: "40px", width: "40px", color: "white", float:"right" }} /> </a>
