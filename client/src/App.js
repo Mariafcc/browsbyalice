@@ -8,6 +8,7 @@ import AfterCare from './component/AfterCare';
 import FormLayout from './component/FormLayout';
 import WaverLayout from "./component/WaverLayout";
 import AfterLayout from './component/AfterLayout';
+import CovidLayout from "./component/Covid.Layout"
 
 class App extends Component {
   constructor() {
@@ -43,6 +44,7 @@ class App extends Component {
             <Route exact path="/forms" component={FormLayout} />
             <Route exact path="/forms.waiver" component={WaverLayout} />
             <Route exact path="/forms.After" component={AfterLayout} />
+            <Route exact path="/forms.covid" component={CovidLayout} />
           </div>
         </header>
       </div>

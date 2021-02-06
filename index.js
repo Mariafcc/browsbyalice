@@ -13,6 +13,7 @@ app.listen(5000, () => console.log("Server Running"));
 const googlePass = process.env.REACT_APP_GMAIL_PASS
 
 
+
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -53,15 +54,15 @@ router.post("/contact", (req, res) => {
 });
 
 
-router.post("/waver", (req, res) => {
+router.post("/covid", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
-    const message = req.body.message;
+    const phone = req.body.phone;
     const mail = {
         from: "mariafcc01@gmail.com",
         to: "mariafcc01@icloud.com",
         subject: "Waver",
-        html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
+        html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Phone: ${phone}</p>`,
     };
     contactEmail.sendMail(mail, (error) => {
         if (error) {
