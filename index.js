@@ -12,7 +12,6 @@ app.listen(5000, () => console.log("Server Running"));
 
 const googlePass = process.env.REACT_APP_GMAIL_PASS
 
-console.log(googlePass)
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
