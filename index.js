@@ -9,7 +9,10 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
-const googlePass = process.env.REACT_APP_GOOGLE_PASS
+
+const googlePass = process.env.REACT_APP_GMAIL_PASS
+
+
 
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -40,6 +43,26 @@ router.post("/contact", (req, res) => {
         to: "mariafcc01@icloud.com",
         subject: "Contact Form Message",
         html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
+    };
+    contactEmail.sendMail(mail, (error) => {
+        if (error) {
+            res.json({ status: "failed" });
+        } else {
+            res.json({ status: "sent" });
+        }
+    });
+});
+
+
+router.post("/covid", (req, res) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const phone = req.body.phone;
+    const mail = {
+        from: "mariafcc01@gmail.com",
+        to: "mariafcc01@icloud.com",
+        subject: "Waver",
+        html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Phone: ${phone}</p>`,
     };
     contactEmail.sendMail(mail, (error) => {
         if (error) {
