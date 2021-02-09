@@ -8,8 +8,8 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 class NavBar extends Component {
     render() {
         return (
-            <Navbar style={{ backgroundColor: "#acffe4", width: "100%" }} expand="lg">
-                <Navbar.Brand style={{ color: "#black", fontSize: "35px", fontFamily: 'Playfair Display' }} href="#home">BrowsByAlice</Navbar.Brand>
+            <Navbar style={{ backgroundColor: "#666699", width: "100%" }} expand="lg">
+                <Navbar.Brand style={{ color: "#c2c2e6", fontSize: "35px", fontFamily: 'Playfair Display' }} href="#home">BrowsByAlice</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav style={{ color: "black", fontSize: "25px", fontFamily: 'Playfair Display'}} className="mr-auto">

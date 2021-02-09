@@ -7,9 +7,9 @@ class About extends Component {
         return (
             <div>
                 <AboutHeader />
-                <Container style={{ fontFamily: "Open Sans Condensed", marginTop: "5px", marginBottom: "40px" }}>
+                <Container style={{ color: "black", fontFamily: "Playfair Display", marginTop: "5px", marginBottom: "40px" }}>
                     <br></br>
-                    <h3 style={{ textAlign: "center", textDecoration: "underline" }}>Welcome to BrowsByAlice</h3>
+                    <h2 style={{ textAlign: "center", textDecoration: "underline" }}>Welcome to BrowsByAlice</h2>
                     <br></br>
                     <h4 style={{ fontStyle: "italic", textAlign: "center" }}>I’m Alice, and this website is your source for all information about permanent makeup (PMU) and the various services that I provide to my fabulous clientele, which I hope will include you as well!</h4>
                     <div>
