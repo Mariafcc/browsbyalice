@@ -9,14 +9,19 @@ class About extends Component {
                 <AboutHeader />
                 <Container style={{ color: "black", fontFamily: "Playfair Display", marginTop: "5px", marginBottom: "40px" }}>
                     <br></br>
-                    <h2 style={{ textAlign: "center", textDecoration: "underline" }}>Welcome to BrowsByAlice</h2>
-                    <br></br>
                     <h4 style={{ fontStyle: "italic", textAlign: "center" }}>I’m Alice, and this website is your source for all information about permanent makeup (PMU) and the various services that I provide to my fabulous clientele, which I hope will include you as well!</h4>
+                    <br></br>
+                    <div style={{ textAlign: "center" }}>
+                        <img style={{ backgroundRepeat: "repeat-x" }} src="./img/preview.jpeg"></img>
+                    </div>
+                    {/* <h2 style={{ textAlign: "center", textDecoration: "underline" }}>Welcome to BrowsByAlice</h2> */}
+                    <br></br>
+                    <br></br>
                     <div>
-                        <p style={{ fontWeight: "bold" }}> Meet Alice </p>
-                        <p>I have been a licensed esthetician with a certificate in Permanent Makeup, which includes microblading and brow shading, for several years now. However, I can appreciate my humble beginnings. After many years of making over others and having a passion for makeup applications and the beauty industry, I wanted to expand my skill set to include permanent makeup. With a desire to become an expert in my industry, I attended the Estelle Skincare and Spa Institute to become an esthetician in 2016 and couldn’t be more proud of how my career has expanded!  I humbly acknowledge the successes I’ve found during my nearly ten year career in the beauty industry particularly in my specialization in flawless and customized makeup applications.</p>
+                        <h3 style={{ fontWeight: "bold", textAlign: "center" }}> Meet Alice </h3>
+                        <p style={{textAlign: "center"}}>I have been a licensed esthetician with a certificate in Permanent Makeup, which includes microblading and brow shading, for several years now. However, I can appreciate my humble beginnings. After many years of making over others and having a passion for makeup applications and the beauty industry, I wanted to expand my skill set to include permanent makeup. With a desire to become an expert in my industry, I attended the Estelle Skincare and Spa Institute to become an esthetician in 2016 and couldn’t be more proud of how my career has expanded!  I humbly acknowledge the successes I’ve found during my nearly ten year career in the beauty industry particularly in my specialization in flawless and customized makeup applications.</p>
                         <p> My services include:  </p>
-                        <ul style = {{ fontWeight: "bolder" }}>
+                        <ul style={{ fontWeight: "bolder" }}>
                             <li>
                                 Microblading
                     </li>
